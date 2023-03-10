@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "socialMedia_backend": {
+      "main": "src/socialMedia_backend/main.mo",
+      "type": "motoko"
+    },
+    "socialMedia_frontend": {
+      "dependencies": [
+        "socialMedia_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/socialMedia_frontend/src/index.html"
+      },
+      "source": [
+        "src/socialMedia_frontend/assets",
+        "dist/socialMedia_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
